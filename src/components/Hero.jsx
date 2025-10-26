@@ -18,7 +18,7 @@ export default function Hero() {
 					initial={{ opacity: 0, y: -20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
-					className="text-5xl md:text-6xl font-bold mb-6 font-mono bg-linear-to-r from-blue-600 via-green-400 to-red-600 text-transparent bg-clip-text">
+					className="text-5xl md:text-6xl font-bold mb-6 font-mono bg-linear-to-r from-blue-600 via-cyan-700 to-cyan-600 text-transparent bg-clip-text">
 					HAZEM IBN-ABDULLAH
 				</motion.h1>
 
@@ -80,11 +80,11 @@ export default function Hero() {
 					transition={{ duration: 0.8, ease: "easeOut" }}
 					className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-[0_0_40px_rgba(59,130,246,0.5)]">
 					<img
-						src="https://images.unsplash.com/photo-1661961112951-f5e4c743d8c5?auto=format&fit=crop&w=600&q=80"
+						src="https://i.pinimg.com/736x/2a/cf/94/2acf9498e2fbe75c721b9ce2f05f8d67.jpg"
 						alt="Hazem"
 						className="w-full h-full object-cover"
 					/>
-					<div className="absolute inset-0 bg-linear-to-tr from-blue-500/20 via-purple-500/20 to-pink-500/20 animate-pulse" />
+					{/* <div className="absolute inset-0 bg-linear-to-tr from-blue-500/20 via-black-500/20 to-white-500/20 animate-pulse" /> */}
 				</motion.div>
 
 				{/* glowing rings */}
