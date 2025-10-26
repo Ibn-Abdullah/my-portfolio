@@ -44,14 +44,14 @@ export default function Projects() {
 	return (
 		<section
 			id="projects"
-			className="py-28 bg-gradient-to-b from-gray-950 via-gray-900 to-black text-center relative overflow-hidden">
+			className="py-28 bg-linear-to-b from-gray-950 via-gray-900 to-black text-center relative overflow-hidden">
 			<div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(56,189,248,0.15),transparent_60%)]"></div>
 
 			<motion.h2
 				initial={{ opacity: 0, y: 20 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.6 }}
-				className="text-5xl font-extrabold mb-16 bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">
+				className="text-5xl font-extrabold mb-16 bg-linear-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">
 				Projects ({projects.length})
 			</motion.h2>
 
@@ -69,7 +69,7 @@ export default function Projects() {
 								alt={p.title}
 								className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
 							/>
-							<div className="p-8 flex flex-col justify-between flex-grow text-left">
+							<div className="p-8 flex flex-col justify-between grow text-left">
 								<div>
 									<h3 className="text-3xl font-semibold text-cyan-400 mb-2">
 										{p.title}
@@ -81,7 +81,7 @@ export default function Projects() {
 									href={p.link}
 									target="_blank"
 									rel="noopener noreferrer"
-									className="mt-6 inline-block px-7 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold shadow-md hover:shadow-cyan-500/40 transition-all">
+									className="mt-6 inline-block px-7 py-3 bg-linear-to-r from-cyan-500 to-blue-600 text-white font-semibold shadow-md hover:shadow-cyan-500/40 transition-all">
 									View Project
 								</a>
 							</div>
