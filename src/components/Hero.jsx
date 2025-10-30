@@ -80,7 +80,7 @@ export default function Hero() {
 					transition={{ duration: 0.8, ease: "easeOut" }}
 					className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-[0_0_40px_rgba(59,130,246,0.5)]">
 					<img
-						src="https://i.pinimg.com/736x/2a/cf/94/2acf9498e2fbe75c721b9ce2f05f8d67.jpg"
+						src="pic.jpg"
 						alt="Hazem"
 						className="w-full h-full object-cover"
 					/>
