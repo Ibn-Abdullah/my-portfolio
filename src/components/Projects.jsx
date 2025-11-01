@@ -7,7 +7,7 @@ export default function Projects() {
 			title: "Chat App",
 			category: "Web App",
 			image: "chatapp.png",
-			link: "https://h-chat-production.up.railway.app/",
+			link: "https://h-chat-fwrr.onrender.com",
 		},
 		{
 			title: "To-Do App",
