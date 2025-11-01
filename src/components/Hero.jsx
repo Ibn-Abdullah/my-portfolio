@@ -11,7 +11,9 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
 	return (
-		<section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-12 px-6 md:px-16 bg-linear-to-br from-slate-900 via-gray-900 to-black">
+		<section
+			id="hero"
+			className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-12 px-6 md:px-16 bg-linear-to-br from-slate-900 via-gray-900 to-black">
 			{/* Left Section */}
 			<div className="flex-1 text-center md:text-left">
 				<motion.h1

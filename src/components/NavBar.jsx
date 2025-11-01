@@ -9,9 +9,11 @@ export default function NavBar() {
 			animate={{ y: 0, opacity: 1 }}
 			transition={{ duration: 0.6 }}
 			className="fixed top-0 w-full z-50 px-8 py-4 backdrop-blur-xl bg-black/30 border-b border-white/10 flex items-center justify-between">
-			<h1 className="text-2xl font-bold tracking-wide bg-linear-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">
+			<a
+				href="#hero"
+				className="text-2xl font-bold tracking-wide bg-linear-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">
 				HAZEM<span className="text-white">.</span>
-			</h1>
+			</a>
 
 			<ul className="hidden md:flex gap-10 text-lg font-medium text-gray-300">
 				<li>
