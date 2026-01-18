@@ -18,9 +18,9 @@ export default function NavBar() {
 			<ul className="hidden md:flex gap-10 text-lg font-medium text-gray-300">
 				<li>
 					<a
-						href="#home"
+						href="#hero"
 						className="hover:text-cyan-400 flex items-center gap-2 transition">
-						<FaHome /> Home
+						<FaHome /> Hero Section
 					</a>
 				</li>
 				<li>
