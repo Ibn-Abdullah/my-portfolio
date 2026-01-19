@@ -1,59 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
+	<head>
+		<!-- Basic setup -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<!-- Basic setup -->
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Title -->
+		<title>Hazem Abdullah | Portfolio</title>
 
-	<!-- Title -->
-	<title>Hazem Abdullah | Portfolio</title>
+		<!-- Primary Meta Tags -->
+		<meta
+			name="title"
+			content="Hazem Ibn-Abdullah | Unity & Web Developer Portfolio" />
+		<meta
+			name="description"
+			content="Explore the portfolio of Hazem Ibn-Abdullah — Unity developer and full-stack web developer passionate about coding, design, and creative technology." />
 
-	<!-- Primary Meta Tags -->
-	<meta name="title" content="Hazem Ibn-Abdullah | Unity & Web Developer Portfolio" />
-	<meta name="description"
-		content="Explore the portfolio of Hazem Ibn-Abdullah — Unity developer and full-stack web developer passionate about coding, design, and creative technology." />
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="public/react.svg" />
 
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="public/react.svg" />
+		<!-- Theme Color -->
+		<meta name="theme-color" content="#0f172a" />
 
-	<!-- Theme Color -->
-	<meta name="theme-color" content="#0f172a" />
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:url"
+			content="https://ibn-abdullah.github.io/my-portfolio/" />
+		<meta
+			property="og:title"
+			content="Hazem Ibn-Abdullah | Developer Portfolio" />
+		<meta
+			property="og:description"
+			content="Portfolio showcasing Unity games, web apps, and creative projects." />
+		<meta
+			property="og:image"
+			content="https://scontent.cdninstagram.com/v/t51.82787-15/571108598_18052506929647465_8925582410064706927_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzc1MjEwMzQxNTUwMjM1MDU5MA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE5MjB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=xNF96ly5xvAQ7kNvwFdXHQ4&_nc_oc=Adkj1jaTfHvZdVkrCJImTK7NsvmokK-VjTgtTpfSSVOnf964_v_8FsXa-cdxsmzIoUk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=U9_89zpEuT4tMEe6gwe_ag&oh=00_AfedVUgdlrW222QhtAAWEAgK_fmesXv8LZ0eBbQyYlAWHw&oe=69043E9D" />
 
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://ibn-abdullah.github.io/my-portfolio/" />
-	<meta property="og:title" content="Hazem Ibn-Abdullah | Developer Portfolio" />
-	<meta property="og:description" content="Portfolio showcasing Unity games, web apps, and creative projects." />
-	<meta property="og:image"
-		content="https://scontent.cdninstagram.com/v/t51.82787-15/571108598_18052506929647465_8925582410064706927_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzc1MjEwMzQxNTUwMjM1MDU5MA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE5MjB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=xNF96ly5xvAQ7kNvwFdXHQ4&_nc_oc=Adkj1jaTfHvZdVkrCJImTK7NsvmokK-VjTgtTpfSSVOnf964_v_8FsXa-cdxsmzIoUk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=U9_89zpEuT4tMEe6gwe_ag&oh=00_AfedVUgdlrW222QhtAAWEAgK_fmesXv8LZ0eBbQyYlAWHw&oe=69043E9D" />
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta
+			property="twitter:url"
+			content="https://ibn-abdullah.github.io/my-portfolio/" />
+		<meta
+			property="twitter:title"
+			content="Hazem Ibn-Abdullah | Developer Portfolio" />
+		<meta
+			property="twitter:description"
+			content="Unity & Web Developer passionate about creative technology and innovation." />
+		<meta
+			property="twitter:image"
+			content="https://scontent.cdninstagram.com/v/t51.82787-15/571108598_18052506929647465_8925582410064706927_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzc1MjEwMzQxNTUwMjM1MDU5MA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE5MjB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=xNF96ly5xvAQ7kNvwFdXHQ4&_nc_oc=Adkj1jaTfHvZdVkrCJImTK7NsvmokK-VjTgtTpfSSVOnf964_v_8FsXa-cdxsmzIoUk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=U9_89zpEuT4tMEe6gwe_ag&oh=00_AfedVUgdlrW222QhtAAWEAgK_fmesXv8LZ0eBbQyYlAWHw&oe=69043E9D" />
 
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://ibn-abdullah.github.io/my-portfolio/" />
-	<meta property="twitter:title" content="Hazem Ibn-Abdullah | Developer Portfolio" />
-	<meta property="twitter:description"
-		content="Unity & Web Developer passionate about creative technology and innovation." />
-	<meta property="twitter:image"
-		content="https://scontent.cdninstagram.com/v/t51.82787-15/571108598_18052506929647465_8925582410064706927_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzc1MjEwMzQxNTUwMjM1MDU5MA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE5MjB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=xNF96ly5xvAQ7kNvwFdXHQ4&_nc_oc=Adkj1jaTfHvZdVkrCJImTK7NsvmokK-VjTgtTpfSSVOnf964_v_8FsXa-cdxsmzIoUk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=U9_89zpEuT4tMEe6gwe_ag&oh=00_AfedVUgdlrW222QhtAAWEAgK_fmesXv8LZ0eBbQyYlAWHw&oe=69043E9D" />
+		<!-- Fonts (modern, fast) -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+			rel="stylesheet" />
 
-	<!-- Fonts (modern, fast) -->
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+		<!-- Tailwind (modern import way) -->
+		<link rel="stylesheet" href="/src/index.css" />
 
-	<!-- Tailwind (modern import way) -->
-	<link rel="stylesheet" href="/src/index.css" />
+		<!-- Keywords for SEO -->
+		<meta
+			name="keywords"
+			content="Hazem Abdullah, portfolio, Unity developer, web developer, React, Tailwind, C#, full stack" />
 
-	<!-- Keywords for SEO -->
-	<meta name="keywords"
-		content="Hazem Abdullah, portfolio, Unity developer, web developer, React, Tailwind, C#, full stack" />
+		<!-- verfication -->
+		<meta
+			name="google-site-verification"
+			content="P3MeFz4-4a4XiaO9gsaFK9eR3hU26Taxpb6kmaRbcxQ" />
+		<script
+			src="https://analytics.ahrefs.com/analytics.js"
+			data-key="NsPGT9dvwwm6fkpVYhhg+Q"
+			async></script>
+	</head>
 
-	<!-- verfication -->
-	<meta name="google-site-verification" content="P3MeFz4-4a4XiaO9gsaFK9eR3hU26Taxpb6kmaRbcxQ" />
-</head>
-
-<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-	<div id="root"></div>
-	<script type="module" src="/src/main.jsx"></script>
-</body>
-
+	<body
+		class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+		<div id="root"></div>
+		<script type="module" src="/src/main.jsx"></script>
+	</body>
 </html>
